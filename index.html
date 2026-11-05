@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FYXX | Black Friday</title>
+  <meta name="description" content="Shop the FYXX Black Friday edit. Filter offers by category and discount.">
+  <style>
+    :root{font-family:Arial,Helvetica,sans-serif;color:#171717;background:#fff;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0}a{color:inherit;text-decoration:none}button,select{font:inherit}
+    .announcement{background:#171717;color:#fff;text-align:center;padding:11px 16px;font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+    header{border-bottom:1px solid #e8e5e0}.head{max-width:1440px;margin:auto;padding:22px 5%;display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .logo{font-family:Georgia,serif;font-size:34px;font-weight:bold;letter-spacing:.16em}.links{display:flex;gap:22px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    nav{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:0 5% 17px;font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+    .hero{text-align:center;background:#e9e5df;padding:78px 20px 72px}.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase}.hero h1{font:normal clamp(48px,7vw,88px)/.98 Georgia,serif;letter-spacing:-.045em;margin:18px 0}
+    .hero p{font-size:13px;color:#5e5a54;line-height:1.7}.cta{display:inline-block;background:#171717;color:#fff;padding:15px 28px;margin-top:16px;font-size:10px;letter-spacing:.15em;text-transform:uppercase}
+    main{max-width:1440px;margin:auto;padding:55px 5% 85px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.section-head h2{font:normal 34px Georgia,serif;margin:0}.muted{color:#77736d;font-size:12px}
+    .filters{display:grid;grid-template-columns:1fr 1fr auto;gap:25px;padding:22px 0;border-block:1px solid #e8e5e0;margin-bottom:28px}.label{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:13px}
+    .pills{display:flex;flex-wrap:wrap;gap:8px}.pill{background:white;border:1px solid #d9d5cf;padding:9px 12px;font-size:10px;cursor:pointer}.pill.active{background:#171717;color:#fff;border-color:#171717}
+    .actions{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;gap:12px}.clear{border:0;background:none;text-decoration:underline;cursor:pointer;font-size:11px}.sort{border:1px solid #e8e5e0;background:#fff;padding:10px;font-size:11px}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px 18px}.empty{grid-column:1/-1;text-align:center;padding:60px 20px;border:1px dashed #d9d5cf;color:#77736d;font-size:13px}
+    .footer{border-top:1px solid #e8e5e0;padding:28px;text-align:center;color:#77736d;font-size:10px;letter-spacing:.08em}
+    @media(max-width:850px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.filters{grid-template-columns:1fr 1fr}.actions{grid-column:1/-1;flex-direction:row}}
+    @media(max-width:600px){.head{padding:17px 5%}.logo{font-size:28px}.links{gap:10px;font-size:10px}nav{justify-content:flex-start;flex-wrap:nowrap;overflow:auto;white-space:nowrap}.hero{padding:60px 18px}.hero h1{font-size:52px}main{padding:40px 5% 60px}.section-head{align-items:flex-start;flex-direction:column}.filters{grid-template-columns:1fr}.actions{grid-column:auto}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}}
+  </style>
+</head>
+<body>
+  <div class="announcement">Get Your FYXX Daily · 10 AM Till Midnight</div>
+  <header>
+    <div class="head"><a class="logo" href="https://www.myfyxx.com/">FYXX</a><div class="links"><a href="https://www.myfyxx.com/">Shop</a><a href="https://www.myfyxx.com/">Rewards</a><a href="https://www.myfyxx.com/">Cart</a></div></div>
+    <nav><a href="https://www.myfyxx.com/">Home</a><a href="https://www.myfyxx.com/">Buy Wines</a><a href="https://www.myfyxx.com/">Buy Spirits</a><a href="https://www.myfyxx.com/">Buy Beer</a><a href="https://www.myfyxx.com/">Buy Cigars</a><a href="https://www.myfyxx.com/">Dukkan</a><a href="https://www.myfyxx.com/">Gifts</a><a href="https://www.myfyxx.com/">The Green Room</a></nav>
+  </header>
+  <section class="hero"><div class="eyebrow">The FYXX Black Friday Edit</div><h1>BLACK FRIDAY</h1><p>Discover the offers. Find your next FYXX.</p><a class="cta" href="#deals">Shop all deals</a></section>
+  <main id="deals">
+    <div class="section-head"><div><h2>Shop the offers</h2><p class="muted">Filter the collection by category and discount.</p></div><span class="muted" id="count">Shopify products will appear here</span></div>
+    <section class="filters">
+      <div><span class="label">Shop by category</span><div class="pills" id="categories"><button class="pill active" data-value="all">All</button></div></div>
+      <div><span class="label">Discount</span><div class="pills" id="discounts"><button class="pill active" data-value="0">All</button><button class="pill" data-value="10">10%+</button><button class="pill" data-value="20">20%+</button><button class="pill" data-value="30">30%+</button><button class="pill" data-value="40">40%+</button><button class="pill" data-value="50">50%+</button><button class="pill" data-value="60">60%+</button><button class="pill" data-value="70">70%+</button></div></div>
+      <div class="actions"><button class="clear" id="clear">Clear filters</button><select class="sort" id="sort" aria-label="Sort products"><option value="featured">Featured</option><option value="discount">Highest discount</option><option value="low">Lowest price</option><option value="high">Highest price</option></select></div>
+    </section>
+    <section class="grid" id="products"><div class="empty">Connect the Shopify Storefront API to display live products, collections, prices, images and availability. No sample products or invented discounts are shown.</div></section>
+  </main>
+  <footer class="footer">FYXX · SIP BACK &amp; RELAX · AMMAN, JORDAN</footer>
+  <script>
+    // Filtering is wired to the product collection when Shopify data is connected.
+    // This initial commit intentionally displays no fabricated product data.
+    const categoryFilters=document.querySelector('#categories');
+    const discountFilters=document.querySelector('#discounts');
+    let category='all',minimumDiscount=0;
+    function activate(container,button){container.querySelectorAll('.pill').forEach(item=>item.classList.toggle('active',item===button));}
+    categoryFilters.addEventListener('click',event=>{const button=event.target.closest('button[data-value]');if(!button)return;category=button.dataset.value;activate(categoryFilters,button);});
+    discountFilters.addEventListener('click',event=>{const button=event.target.closest('button[data-value]');if(!button)return;minimumDiscount=Number(button.dataset.value);activate(discountFilters,button);});
+    document.querySelector('#clear').addEventListener('click',()=>{category='all';minimumDiscount=0;activate(categoryFilters,categoryFilters.querySelector('[data-value="all"]'));activate(discountFilters,discountFilters.querySelector('[data-value="0"]'));document.querySelector('#sort').value='featured';});
+  </script>
+</body>
+</html>
